@@ -1,4 +1,4 @@
 insert into shop.discount_types values
-(default, 'все товары'),
-(default, 'группа товаров'),
-(default, 'товар');
+(default, 'РІСЃРµ С‚РѕРІР°СЂС‹'),
+(default, 'РіСЂСѓРїРїР° С‚РѕРІР°СЂРѕРІ'),
+(default, 'С‚РѕРІР°СЂ');

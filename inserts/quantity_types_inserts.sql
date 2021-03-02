@@ -1,4 +1,4 @@
 insert into shop.quantity_types values
-(default, 'штука'),
-(default, 'килограмм'),
-(default, 'метр');
+(default, 'С€С‚СѓРєР°'),
+(default, 'РєРёР»РѕРіСЂР°РјРј'),
+(default, 'РјРµС‚СЂ');

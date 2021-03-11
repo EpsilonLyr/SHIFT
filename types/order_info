@@ -1,4 +1,4 @@
-create type order_info as
+create type shop.order_info as
 (
     order_items     shop.order_item_info[],
     employee_id     integer,

@@ -6,13 +6,13 @@ create or replace procedure shop.insert_product_to_shop_warehouse(
 as
 $$
 declare
-    p_count integer;
+    v_count integer;
 begin
  	select count(*)
-    into p_count
+    into v_count
     from shop.shop_warehouses
     where product_id=p_product_id and shop_id=p_shop_id;
-	if p_count > 0 then
+	if v_count > 0 then
         update shop.shop_warehouses
         set quantity = (quantity + p_quantity)
         where product_id = p_product_id and shop_id = p_shop_id;

@@ -1,0 +1,13 @@
+create or replace procedure shop.get_discount_type(
+	p_discount_id in integer,
+    p_type inout integer
+	
+)
+as
+$$
+begin
+    SELECT type into p_type 
+	FROM discount_types
+	WHERE id = p_discount_id;
+end;
+$$ language plpgsql;

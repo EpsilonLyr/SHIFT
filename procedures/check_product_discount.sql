@@ -27,6 +27,15 @@ begin
 		then
 			p_status = true;
 		 end if;
+	   elseif
+	   	v_discount_type = 'группа товаров'
+	   then
+	   	call shop.get_product_group_id_by_discount_id(v_discounts_id[i],v_product_id);
+		if 
+		v_product_id is not null
+		then 
+		p_status = true;
+		end if;
 	  end if;
 	  end loop;
 	  

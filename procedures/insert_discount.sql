@@ -14,7 +14,7 @@ begin
     if ((p_product_id is null and p_group_id is not null) or (p_product_id is not null and p_group_id is null) and
        (p_percent is null and p_fixed_sum is not null or p_percent is not null and p_fixed_sum is null) or
        (p_type_id = 1)) and
-       (discounts_to is not null and discounts_from is not null and discounts_from < discounts_to)
+       (p_discaunts_to is not null and p_discounts_from is not null and p_discounts_from < p_discaunts_to)
     then 
 	INSERT INTO shop.discounts(
 	id, type_id, product_id, group_id, discounts_from, discounts_to, percent, fixed_sum)

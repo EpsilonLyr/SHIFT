@@ -7,7 +7,7 @@ as
 $$
 begin
     SELECT type into p_type 
-	FROM discount_types
+	FROM shop.discount_types
 	WHERE id = p_discount_id;
 end;
 $$ language plpgsql;

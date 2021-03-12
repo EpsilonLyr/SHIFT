@@ -1,6 +1,6 @@
 create or replace procedure shop.get_discount_type(
 	p_discount_id in integer,
-    p_type inout integer
+    p_type inout varchar
 	
 )
 as
